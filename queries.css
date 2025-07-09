@@ -1,0 +1,300 @@
+@media (max-width: 83em) {
+    .main--part {
+        max-width: 120rem;
+    }
+    .heading--primary {
+        font-size: 4.4rem;
+    }
+}
+
+@media (max-width: 77em) {
+    .header--navbar {
+        padding: 0 1.5rem;
+    }
+    .right--side--testimonials {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .four--atribute--flex {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 57.25%;
+    }
+    .heading--how--section {
+        font-size: 3.6rem;
+    }
+    .heading--step {
+        font-size: 2.4rem;
+    }
+    .grid--testo,
+    .cart,
+    .testimonials,
+    .indoor--grid--testimonials,
+    .carts--pricing--section,
+    .four--atribute--flex,
+    .grid--footer {
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+    .header--navbar {
+        padding: 0 3.2rem;
+    }
+    .navbar--links {
+        gap: 3.2rem;
+    }
+    .left--side--testimonials {
+        padding: 9.6rem 3.2rem;
+    }
+}
+
+@media (max-width: 59em) {
+    html {
+        font-size: 56%;
+    }
+    .main--part {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 0 8rem;
+        row-gap: 3.2rem;
+    }
+    .under--left {
+        justify-content: center;
+        margin-top: 3.2rem;
+    }
+    .hero--img {
+        display: none;
+    }
+    .testimonials {
+        grid-template-columns: 1fr;
+        row-gap: 1.5rem;
+    }
+    .right--side--testimonials {
+        grid-template-columns: repeat(6, 1fr);
+        padding-top: 0;
+    }
+    .company--logo img {
+        height: 2.4rem;
+    }
+    .step--number {
+        font-size: 7.4rem;
+    }
+    .cart--details {
+        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+    .cta {
+        grid-template-columns: 3fr 2fr;
+    }
+    .cta-form button {
+        margin-top: 2.4rem;
+    }
+}
+
+@media (max-width: 44em) {
+    .cart {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .meals--details {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+    .list--item--details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .carts--pricing--section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cart--1,
+    .cart--2 {
+        justify-self: center;
+        width: 100%;
+    }
+    .cart--2::before {
+        font-size: 1.2rem;
+        right: -22.5%;
+    }
+    .button--mobile--navbar {
+        display: block;
+        z-index: 999;
+    }
+    .icon--mobile--nav[name="close-outline"] {
+        display: none;
+    }
+    .icon--mobile--nav[name="menu-outline"] {
+        display: block;
+    }
+    .links--navbar {
+        height: 100vh;
+        z-index: 99;
+    }
+
+    .navbar--links {
+        background-color: rgba(255, 255, 255, 0.6);
+        position: absolute;
+        backdrop-filter: blur(10px) !important;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+        gap: 4.8rem;
+        transition: all 0.5s;
+        /* display: none; */
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .navbar--links li {
+        font-size: 3.6rem !important;
+    }
+    .manu--open .navbar--links {
+        opacity: 0.95;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translate(0);
+    }
+    .manu--open .icon--mobile--nav[name="close-outline"] {
+        display: block;
+    }
+    .manu--open .icon--mobile--nav[name="menu-outline"] {
+        display: none;
+    }
+    .navbar--main--links {
+        font-size: 3.2rem !important;
+        font-weight: bold !important;
+    }
+    .right--side--testimonials {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .four--atribute--flex {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .id--footer {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .first--column {
+        grid-column: span 3;
+        grid-row: 2;
+    }
+    .second--column {
+        grid-column: span 3;
+        grid-row: 2;
+    }
+    .third--column,
+    .fourth--column,
+    .fifth--column {
+        grid-row: 1;
+        grid-column: span 2;
+        margin-bottom: 3.2rem;
+    }
+    .company--logo--customers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        margin-top: 5rem;
+        padding: 0 3.6rem;
+    }
+    .first--logo,
+    .second--logo,
+    .third--logo {
+        grid-row: 1;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+    }
+    .fourth--logo,
+    .fifth--logo {
+        grid-row: 2;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+    }
+    .footer--logo {
+        width: 50%;
+    }
+    .company--logo--customers {
+        z-index: -1;
+        visibility: auto;
+    }
+    footer {
+        padding: 0 2.4rem;
+    }
+
+    .margin--btn {
+        margin-right: 0;
+    }
+    main {
+        padding: 4.8rem 0 4.8rem 0;
+    }
+}
+@media (max-width: 34em) {
+    html {
+        font-size: 46%;
+    }
+    .heading--step {
+        font-size: 2rem;
+    }
+    .grid--testo,
+    .cart,
+    .indoor--grid--testimonials,
+    .carts--pricing--section,
+    .four--atribute--flex,
+    .cta {
+        grid-template-columns: 1fr;
+    }
+    .first--app--screen {
+        grid-row: 1;
+    }
+    .second--app--screen {
+        grid-row: 3;
+    }
+    .third--app--screen {
+        grid-row: 5;
+    }
+    .testo-image--section {
+        transform: translateY(2.4rem);
+    }
+    .main--part {
+        padding: 0 3.2rem;
+    }
+    .right--side--testimonials {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.2rem;
+    }
+    .cart--2::before {
+        right: -18%;
+        top: 5%;
+    }
+    .cta--imagebox {
+        height: 36rem;
+        grid-row: 1;
+    }
+    .cta--textbox {
+        padding: 3.2rem;
+    }
+    .company--logo--customers {
+        z-index: -1;
+    }
+    .hero--button {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.4rem;
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .hero--button--margin {
+        margin-right: 0;
+    }
+}
